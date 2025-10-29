@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WGU Cloud Planner - Academic Management App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --wgu-dark-blue: #003087;
+            --wgu-medium-blue: #0056B3;
+            --wgu-light-blue: #007BFF;
+            --wgu-purple: #6F42C1;
+            --wgu-gold: #FFC107;
+        }
+
+        .wgu-icon {
+            border-radius: 30%;
+        }
+        
+        .bg-wgu-dark { background-color: var(--wgu-dark-blue) !important; }
+        .bg-wgu-medium { background-color: var(--wgu-medium-blue) !important; }
+        .bg-wgu-light { background-color: var(--wgu-light-blue) !important; }
+        .text-wgu-gold { color: var(--wgu-gold) !important; }
+        .btn-wgu { background-color: var(--wgu-dark-blue); color: white; }
+        .btn-wgu:hover { background-color: var(--wgu-medium-blue); color: white; }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--wgu-dark-blue) 0%, var(--wgu-purple) 100%);
+            color: white;
+            padding: 80px 0;
+        }
+
+        #screenshots .container {
+            max-width: 1000px;
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--wgu-light-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        
+        .screenshot-img {
+            border: 3px solid var(--wgu-dark-blue);
+            border-radius: 30px;
+            transition: transform 0.3s ease;
+            max-width: 237px;
+        }
+        
+        .screenshot-img:hover {
+            transform: scale(1.05);
+        }
+        
+        .download-section {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-wgu-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="files/wgu_icon.png" alt="WGU Cloud Planner" height="50" class="me-2 wgu-icon">
+                WGU Cloud Planner
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto d-flex justify-content-center flex-column flex-lg-row align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#screenshots">Screenshots</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#download">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#documentation">Documentation</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">WGU Cloud Planner</h1>
+                    <p class="lead mb-4">Your comprehensive academic management solution for Western Governors University</p>
+                    <p class="mb-4">Organize your terms, courses, assessments, and notes with cloud synchronization across all your devices</p>
+                    <a href="#download" class="btn btn-lg btn-wgu px-5 py-3">Download Now</a>                   
+                     <img src="files/wgu_banner.jpg" alt="WGU Cloud Planner Banner" class="img-fluid my-5 rounded" >
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="fw-bold">Powerful Academic Management</h2>
+                    <p class="text-muted">Everything you need to succeed in your WGU journey</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt text-white fs-4"></i>
+                    </div>
+                    <h4>Term Management</h4>
+                    <p class="text-muted">Organize academic terms with start/end dates and automatic validation</p>
+                </div>
+                
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-book text-white fs-4"></i>
+                    </div>
+                    <h4>Course Tracking</h4>
+                    <p class="text-muted">Manage courses, credit units, instructors, and scheduling</p>
+                </div>
+                
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-tasks text-white fs-4"></i>
+                    </div>
+                    <h4>Assessment Planning</h4>
+                    <p class="text-muted">Track Objective and Performance assessments with deadlines</p>
+                </div>
+                
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-sticky-note text-white fs-4"></i>
+                    </div>
+                    <h4>Notes & Sharing</h4>
+                    <p class="text-muted">Take study notes and share them across platforms</p>
+                </div>
+                
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-search text-white fs-4"></i>
+                    </div>
+                    <h4>Global Search</h4>
+                    <p class="text-muted">Find anything across all your academic data instantly</p>
+                </div>
+                
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-pdf text-white fs-4"></i>
+                    </div>
+                    <h4>PDF Reports</h4>
+                    <p class="text-muted">Generate comprehensive reports for progress tracking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Screenshots Section -->
+<section id="screenshots" class="py-5 bg-light">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col">
+                <h2 class="fw-bold">App Screenshots</h2>
+                <p class="text-muted">See the WGU Cloud Planner in action</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center screenshot-container">
+                <img src="files/app_screenshots/Screenshot 2025-10-20 180410.png" class="img-fluid screenshot-img" alt="Home Dashboard">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center screenshot-container">
+                <img src="files/app_screenshots/Screenshot 2025-10-20 180457.png" class="img-fluid screenshot-img" alt="Course Management">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center screenshot-container">
+                <img src="files/app_screenshots/Screenshot 2025-10-20 181136.png" class="img-fluid screenshot-img" alt="Search Results">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center screenshot-container">
+                <img src="files/app_screenshots/Screenshot 2025-10-20 182054.png" class="img-fluid screenshot-img" alt="Assessment Tracking">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center screenshot-container">
+                <img src="files/app_screenshots/Screenshot 2025-10-20 182704.png" class="img-fluid screenshot-img" alt="PDF Reports">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center screenshot-container">
+                <img src="files/app_screenshots/Screenshot 2025-10-20 183140.png" class="img-fluid screenshot-img" alt="Note Taking">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center screenshot-container">
+                <img src="files/app_screenshots/Screenshot 2025-10-20 184145.png" class="img-fluid screenshot-img" alt="Additional Feature 1">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center screenshot-container">
+                <img src="files/app_screenshots/Screenshot 2025-10-20 194911.png" class="img-fluid screenshot-img" alt="Additional Feature 2">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center screenshot-container">
+                <img src="files/app_screenshots/Screenshot 2025-10-20 195156.png" class="img-fluid screenshot-img" alt="Additional Feature 3">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-4">Download WGU Cloud Planner</h2>
+                    
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">📱 Android App</h5>
+                            <p class="card-text">Download the APK file to install on your Android device</p>
+                            <a href="files/deployed_project.apk" class="btn btn-wgu btn-lg" download>
+                                Download APK (Android)
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">📋 Installation Instructions</h5>
+                            <ol class="text-start">
+                                <li>Download the APK file above</li>
+                                <li>On your Android device, go to Settings → Security</li>
+                                <li>Enable "Install from unknown sources"</li>
+                                <li>Open the downloaded APK file to install</li>
+                                <li>Launch WGU Cloud Planner and create your account</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Section -->
+    <section id="documentation" class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="fw-bold">Project Documentation</h2>
+                    <p class="text-muted">Complete documentation for the WGU Cloud Planner project</p>
+                </div>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Design Documents</h5>
+                            <p class="card-text">Class diagrams and architecture documentation</p>
+                            <a href="files/class_diagram.png" class="btn btn-wgu" download>Download Diagram</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Project Proposal</h5>
+                            <p class="card-text">Complete project proposal and specifications</p>
+                            <a href="files/WGU_Cloud_Planner_Proposal.pdf" class="btn btn-wgu" download>Download PDF</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Wireframes</h5>
+                            <p class="card-text">Initial design mockups and user flow</p>
+                            <a href="files/wireframe.png" class="btn btn-wgu" download>Download Wireframes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-wgu-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <h5 >WGU Cloud Planner</h5>
+                    <p >Academic Management Mobile Application<br>Built with .NET MAUI & Firebase</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p>Source Code: <a target="_blank" href="https://gitlab.com/wgu-gitlab-environment/student-repos/amaloc3/c971-mobile-application-development-using-c-sharp/-/tree/Working?ref_type=heads" class="text-wgu-gold">GitLab Repository</a></p>
+                    <p>Technologies: .NET MAUI, Firebase, C#, MVVM, xUnit</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <p class="mb-0">&copy; 2025 WGU Cloud Planner. Capstone Project for D424 Software Engineering.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome for Icons -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+</body>
+</html>
